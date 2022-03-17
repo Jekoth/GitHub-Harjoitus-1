@@ -21,7 +21,6 @@ namespace TicTacToe
     public partial class MainWindow : Window
     {
         int turn;
-        int i, j;
 
         public MainWindow()
             : base()
@@ -57,12 +56,10 @@ namespace TicTacToe
                 {
 
                     MessageBox.Show("PLAYER O WINS");
-                    Label1.Content = ++i;
                 }
                 else if (btnContent == "X")
                 {
                     MessageBox.Show("PLAYER X WINS");
-                    Label2.Content = ++j;
                 }
                 Disablebuttons();
             }
@@ -103,17 +100,6 @@ namespace TicTacToe
             turn += 1;
             if (turn > 2)
                 turn = 1;
-        }
-
-        private void Reset_Click(object sender, RoutedEventArgs e)
-        {
-            foreach (Button btn in wrapPanel1.Children)
-            {
-                btn.Content = "";
-                btn.IsEnabled = true;
-
-            }
-
         }
 
         private void Button1_Click(object sender, RoutedEventArgs e)
