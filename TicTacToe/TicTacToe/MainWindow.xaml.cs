@@ -147,9 +147,10 @@ namespace TicTacToe
 
         }
 
-        private void RESET_Click(object sender, RoutedEventArgs e)
+        private void Reset_Click(object sender, RoutedEventArgs e)
         {
-
+            Application.Current.Shutdown();
+            System.Diagnostics.Process.Start(Environment.GetCommandLineArgs()[0]);
         }
     }
 }

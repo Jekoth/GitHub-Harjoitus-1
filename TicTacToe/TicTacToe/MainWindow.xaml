@@ -16,10 +16,15 @@
                 <GradientStop Color="Black" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
+        <Button x:Name="Reset" Content="RESET" HorizontalAlignment="Right" Height="30" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="87" BorderBrush="{x:Null}" FontWeight="Bold" FontSize="18.667" Click="Reset_Click">
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF343ECC" Offset="0"/>
+                    <GradientStop Color="#FF1B0D0D" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Foreground>
+        </Button>
         <WrapPanel Height="177" HorizontalAlignment="Center" Margin="0,92,0,0" x:Name="wrapPanel1" VerticalAlignment="Top" Width="180">
-
-            
-            
             <Button x:Name="Button1" Content="" HorizontalAlignment="Left" Height="60" Margin="0" VerticalAlignment="Top" Width="60" Foreground="Purple" FontWeight="Bold" FontSize="20" BorderBrush="{x:Null}" Click="Button_Click">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
